@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+</head>
+<body>
+
+<h1>Cars</h1>
+<div th:each="car : ${cars}">
+
+    <a th:text=" 'Car model = ' + ${car.getModel()} +
+     ', series = ' + ${car.getSeries()} + ', age = ' + ${car.getAge()}">Cars</a>
+
+</div>
+
+<a href th:method="POST">Create 7 default cars</a>
+
+</body>
+</html>
