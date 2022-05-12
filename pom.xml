@@ -36,6 +36,12 @@
             <version>3.0.14.RELEASE</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.10.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
