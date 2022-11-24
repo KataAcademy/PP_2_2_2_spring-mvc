@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title></title>
@@ -9,6 +8,9 @@
 <div>
     <th:block th:each="msg : ${messages}">
         <h1 th:text="${msg}"></h1>
+    </th:block>
+    <th:block th:each="lnk : ${links}">
+        <a th:href="@{/cars}" th:text="${lnk}">link</a>
     </th:block>
 </div>
 </body>
