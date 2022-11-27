@@ -10,6 +10,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.spring5.SpringTemplateEngine;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
+import web.model.Car;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 @EnableWebMvc
@@ -50,4 +54,17 @@ public class WebConfig implements WebMvcConfigurer {
         resolver.setCharacterEncoding("UTF-8");
         resolver.setContentType("text/html;charset=UTF-8");
     }
+
+    @Bean
+    public List<Car> getDataList() {
+        List<Car> dataBase = new ArrayList<>();
+        dataBase.add(new Car("Daewoo", "Matiz", 2000));
+        dataBase.add(new Car("Mercedes-Benz", "GLE 200", 50000));
+        dataBase.add(new Car("Kia", "K5", 30000));
+        dataBase.add(new Car("Tesla", "Model 3", 40000));
+        dataBase.add(new Car("Lada", "Priora", 3000));
+        return dataBase;
+    }
+
+
 }

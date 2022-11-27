@@ -6,10 +6,22 @@
     <title>All cars</title>
 </head>
 <body>
-<div>
-    <th:block th:each="msg : ${messages}">
-        <h1 th:text="${msg}"></h1>
-    </th:block>
-</div>
+<h1 th:text="${something}"/>
+<table border="1">
+    <thead>
+    <tr>
+        <th scope="col">Brand</th>
+        <th scope="col">Model</th>
+        <th scope="col">Cost, $</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="car: ${cars}">
+        <td th:text="${car.getCarBrand()}"/>
+        <td th:text="${car.getCarModel()}"/>
+        <td th:text="${car.getCarCost()}"/>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

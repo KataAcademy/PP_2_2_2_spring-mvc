@@ -1,58 +1,43 @@
 package web.model;
 
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Car {
-    private String model;
-    private int year;
-    private int maxSpeed;
 
-    public Car(String model, int year, int maxSpeed) {
-        this.model = model;
-        this.year = year;
-        this.maxSpeed = maxSpeed;
+    private String carBrand;
+    private String carModel;
+    private int carCost;
+    private int count = 1;
+
+    public Car() {
+
     }
 
-    public String getModel() {
-        return model;
+    public Car(String carBrand, String carModel, int carCost) {
+        this.carBrand = carBrand;
+        this.carModel = carModel;
+        this.carCost = carCost;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public String getCarBrand() {
+        return carBrand;
     }
 
-    public int getYear() {
-        return year;
+    public String getCarModel() {
+        return carModel;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public int getCarCost() {
+        return carCost;
     }
 
-    public int getMaxSpeed() {
-        return maxSpeed;
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
     }
 
-    public void setMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
     }
 
-    @Override
-    public String toString() {
-        return "Car model: " + model + "\n" +
-                ", year of  manufacture: " + year + "\n" +
-                ", maximum speed: " + maxSpeed + "\n";
+    public void setCarCost(int carCost) {
+        this.carCost = carCost;
     }
-    public static List<Car> getCarList(){
-        List<Car> carList = new ArrayList<>();
-        carList.add(new Car("Daewoo Matiz", 2005, 144));
-        carList.add(new Car("Mercedes C-class", 2022, 290));
-        carList.add(new Car("Lada Priora", 2014, 190));
-        carList.add(new Car("Bentley Continental GT", 2021, 335));
-        carList.add(new Car("Niva 4x4", 1983, 137));
-        return carList;
-    }
-
 }
