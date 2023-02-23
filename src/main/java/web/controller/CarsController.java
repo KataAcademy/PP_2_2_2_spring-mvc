@@ -9,7 +9,7 @@ import web.dao.CarDao;
 @Controller
 public class CarsController {
 
-    private CarDao carDao;
+    private final CarDao carDao;
 
     public CarsController(CarDao carDao) {
         this.carDao = carDao;
