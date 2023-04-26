@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="PP_2_3_1_CRUD_app" />
         <module name="spring-mvc" />
       </profile>
     </annotationProcessing>
