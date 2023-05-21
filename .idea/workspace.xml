@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="facf1c10-2d8b-498e-97e8-8fc0839f0fc5" name="Changes" comment="Ошибка 404 при запуске.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/controller/CarsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/car.html" afterDir="false" />
+    <list default="true" id="facf1c10-2d8b-498e-97e8-8fc0839f0fc5" name="Changes" comment="/cars работает">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/car.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/car.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,7 @@
       <workItem from="1684622243458" duration="646000" />
       <workItem from="1684669792601" duration="641000" />
       <workItem from="1684677819900" duration="1566000" />
-      <workItem from="1684679410676" duration="9930000" />
+      <workItem from="1684679410676" duration="10892000" />
     </task>
     <task id="LOCAL-00001" summary="Ошибка 404 при запуске.">
       <created>1684683043863</created>
@@ -219,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684683056679</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Ошибка 404 при запуске.">
+      <created>1684694164725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684694164725</updated>
+    </task>
+    <task id="LOCAL-00004" summary="/cars работает">
+      <created>1684694193531</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684694193531</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +241,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ошибка 404 при запуске." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ошибка 404 при запуске." />
+    <MESSAGE value="/cars работает" />
+    <option name="LAST_COMMIT_MESSAGE" value="/cars работает" />
   </component>
 </project>
