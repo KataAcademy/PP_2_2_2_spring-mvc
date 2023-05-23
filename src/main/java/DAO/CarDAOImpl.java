@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CarDAOImpl implements CarDAO {
-    private final List<Car> carList = new ArrayList<>();
+    private List<Car> carList = new ArrayList<>();
+
 
     public List<Car> fullCarList() {
         for (int i = 1; i <= 5; i++) {
@@ -14,6 +15,9 @@ public class CarDAOImpl implements CarDAO {
         }
         return carList;
     }
+
+
+
 
     @Override
     public List<Car> carlist(int count) {
@@ -23,6 +27,7 @@ public class CarDAOImpl implements CarDAO {
             return fullCarList();
         }
     }
+
 
 
 }

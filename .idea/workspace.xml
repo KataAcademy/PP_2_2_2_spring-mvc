@@ -9,19 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="facf1c10-2d8b-498e-97e8-8fc0839f0fc5" name="Changes" comment="Вытащил лист на страничку в браузере">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/CarDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/CarDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/CarService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/CarServiceImp.java" afterDir="false" />
+    <list default="true" id="facf1c10-2d8b-498e-97e8-8fc0839f0fc5" name="Changes" comment="16:03 23.05">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-mvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-mvc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/CarDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/CarDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/CarServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/CarServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/CarsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/CarsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/Model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/Model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/car.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/controller/CarsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/classes/web/controller/CarsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/car.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Spring_MVC/WEB-INF/pages/car.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/controller/CarsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/controller/CarsController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,31 +76,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "1Branch__21__05__17__00",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Projects/PP_1_1_3-4_JDBC_Hibernate-master/PP_2_2_2_spring-mvc",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.applicationServers",
-    "spring.configuration.checksum": "c5611d5c8c9f9e897d6bf480c0e77655",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;1Branch__21__05__17__00&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/PP_1_1_3-4_JDBC_Hibernate-master/PP_2_2_2_spring-mvc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c5611d5c8c9f9e897d6bf480c0e77655&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunDashboard">
     <option name="openRunningConfigInTab" value="true" />
   </component>
@@ -212,6 +207,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CarDAOImpl" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.75" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CarDAOImpl" />
@@ -234,7 +233,8 @@
       <workItem from="1684677819900" duration="1566000" />
       <workItem from="1684679410676" duration="11844000" />
       <workItem from="1684770847214" duration="698000" />
-      <workItem from="1684838172349" duration="6889000" />
+      <workItem from="1684838172349" duration="11922000" />
+      <workItem from="1684858672311" duration="1846000" />
     </task>
     <task id="LOCAL-00001" summary="Ошибка 404 при запуске.">
       <created>1684683043863</created>
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684697261106</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="16:03 23.05">
+      <created>1684847026450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684847026450</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +296,7 @@
     <MESSAGE value="Ошибка 404 при запуске." />
     <MESSAGE value="/cars работает" />
     <MESSAGE value="Вытащил лист на страничку в браузере" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вытащил лист на страничку в браузере" />
+    <MESSAGE value="16:03 23.05" />
+    <option name="LAST_COMMIT_MESSAGE" value="16:03 23.05" />
   </component>
 </project>
