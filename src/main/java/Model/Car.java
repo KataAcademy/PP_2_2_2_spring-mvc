@@ -2,6 +2,8 @@ package Model;
 
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class Car {
     private String model;
@@ -16,6 +18,7 @@ public class Car {
 
     public Car() {
     }
+
     public String getModel() {
         return model;
     }
