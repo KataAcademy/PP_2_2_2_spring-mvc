@@ -4,30 +4,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.service.CarService;
+import web.service.CarServiceImpl;
 
-import javax.servlet.http.HttpServletRequest;
 //@RequestMapping("/cars")
 @Controller
 public class CarsController {
-
-    CarService carService;
+    String count = null;
+    CarServiceImpl carServiceImpl;
     @Autowired
-    public CarsController(CarService carService) {
-        this.carService = carService;
+    public CarsController(CarServiceImpl carServiceImpl) {
+        this.carServiceImpl = carServiceImpl;
     }
 
     @GetMapping("/cars")
-    public String getCars(HttpServletRequest request, Model model) {
-        String count = request.getParameter("count");
+    public String getCars(@RequestParam (value = "count", required = false) String count, Model model) {
         if (count == null) {
-            model.addAttribute("cars", carService.getListOfCars(carService.getCarCount()));
+            model.addAttribute("cars", carServiceImpl.getListOfCars(carServiceImpl.getCarCount()));
         } else if (Integer.parseInt(count) >= 5) {
-            model.addAttribute("cars", carService.getListOfCars(carService.getCarCount()));
+            model.addAttribute("cars", carServiceImpl.getListOfCars(carServiceImpl.getCarCount()));
         } else {
-            model.addAttribute("cars", carService.getListOfCars(Integer.parseInt(count)));
+            model.addAttribute("cars", carServiceImpl.getListOfCars(Integer.parseInt(count)));
         }
 
 
