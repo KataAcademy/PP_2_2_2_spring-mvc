@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 12px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 6px 10px;
+            text-align: left;
+        }
+        form {
+            margin-bottom: 16px;
+        }
+        label {
+            display: inline-block;
+            width: 60px;
+        }
+        input {
+            margin: 4px 8px 4px 0;
+        }
+        .error {
+            color: #b00020;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Car List</h1>
+
+<div class="error" th:if="${error}" th:text="${error}"></div>
+
+<h2>Add a Car</h2>
+
+<form th:action="@{/cars}" th:object="${carForm}" method="post">
+
+    <div>
+        <label>Brand</label>
+        <input type="text" th:field="*{brand}" placeholder="Toyota"/>
+        <div class="error"
+             th:if="${#fields.hasErrors('brand')}"
+             th:errors="*{brand}">
+        </div>
+    </div>
+
+    <div>
+        <label>Model</label>
+        <input type="text" th:field="*{model}" placeholder="Camry"/>
+        <div class="error"
+             th:if="${#fields.hasErrors('model')}"
+             th:errors="*{model}">
+        </div>
+    </div>
+
+    <div>
+        <label>Year</label>
+        <input type="number" th:field="*{year}" min="1900" max="2026"/>
+        <div class="error"
+             th:if="${#fields.hasErrors('year')}"
+             th:errors="*{year}">
+        </div>
+    </div>
+
+    <button type="submit">Add</button>
+</form>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Brand</th>
+        <th>Model</th>
+        <th>Year</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="car, stat : ${cars}">
+        <td th:text="${stat.count}"></td>
+        <td th:text="${car.brand}"></td>
+        <td th:text="${car.model}"></td>
+        <td th:text="${car.year}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
